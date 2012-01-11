@@ -1,0 +1,25 @@
+{% load i18n %}
+{% load debug_toolbar_urlconf %}
+  <style type="text/css">
+    #urlconf { background:#f6f6f6; }
+    #urlconf ol { margin: 0.5em 4em; }
+    #urlconf ol li, #urlconf .mono { font-family: monospace; }
+  </style>
+<h4>{% trans 'URLconf module' %}{{ urlpatterns|length|pluralize }}</h4>
+    <div id="urlconf">
+{% if urlpatterns %}
+      <p>
+      Using the URLconf defined in <span class="mono">{{ urlconf }}</span>,
+      Django tried these URL patterns, in this order:
+      </p>
+      {% urlconf_display urlpatterns %}
+{% else %}
+	<p>No URL patterns defined.</p>
+{% endif %}
+    </div>
+
+{% if debug %}
+<code>
+{{ debug }}
+<code>
+{% endif %}
