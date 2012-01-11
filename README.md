@@ -26,3 +26,8 @@ Add debug_toolbar_extras to your INSTALLED_APPS:
         'debug_toolar_extras',
     )
 
+    DEBUG_TOOLBAR_PANELS = (
+        ...
+        'debug_toolbar_extras.panels.urlconf.URLconfDebugPanel',
+        ...
+    )
