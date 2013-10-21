@@ -23,7 +23,7 @@ Add debug_toolbar_extras to your INSTALLED_APPS:
     INSTALLED_APPS = (
         ...
         'debug_toolbar',
-        'debug_toolar_extras',
+        'debug_toolbar_extras',
     )
 
     DEBUG_TOOLBAR_PANELS = (
