@@ -18,6 +18,10 @@ Requirements
 Installation
 ------------
 
+Install with pip:
+
+    pip install git+https://github.com/crass/django-debug-toolbar-extras.git#egg=django_debug_toolbar_extras
+
 Add debug_toolbar_extras to your INSTALLED_APPS:
 
     INSTALLED_APPS = (
